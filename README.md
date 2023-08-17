@@ -27,3 +27,9 @@ If you are developing a production application, we recommend updating the config
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 <a href="https://www.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_12804210.htm#query=website%20background&position=17&from_view=keyword&track=ais">Image by coolvector</a> on Freepik# portfolio
+
+# Credits
+<a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Aswell Studio - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by IconKanan - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Prosymbols Premium - Flaticon</a>
