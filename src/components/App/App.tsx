@@ -3,6 +3,7 @@ import GlobalStyles from '../../styles/GlobalStyles.styles';
 import StyledApp from './App.styles';
 import theme from '../../styles/Theme.styles';
 import Navbar from '../Navbar/Navbar';
+import Home from '../Home/Home';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <StyledApp>
         <GlobalStyles />
         <Navbar />
+        <Home />
       </StyledApp>
     </ThemeProvider>
   );
