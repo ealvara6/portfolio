@@ -54,6 +54,11 @@ const GlobalStyles = createGlobalStyle`
     color: ${(props) => props.theme.dark.color};
     font-family: 'Kanit', sans-serif;
   }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export default GlobalStyles;

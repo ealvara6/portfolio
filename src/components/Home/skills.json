@@ -1,0 +1,57 @@
+[
+  {
+    "icon": "src/assets/icons8-javascript.svg",
+    "name": "Javascript",
+    "link": "https://www.javascript.com/"
+  },
+  {
+    "icon": "src/assets/icons8-html.svg",
+    "name": "HTML",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  {
+    "icon": "src/assets/icons8-css.svg",
+    "name": "CSS",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    "icon": "src/assets/icons8-sass.svg",
+    "name": "Sass",
+    "link": "https://sass-lang.com/"
+  },
+  {
+    "icon": "src/assets/icons8-react.svg",
+    "name": "React",
+    "link": "https://react.dev/"
+  },
+  {
+    "icon": "src/assets/vitejs.svg",
+    "name": "Vite",
+    "link": "https://vitejs.dev/"
+  },
+  {
+    "icon": "src/assets/icons8-webpack.svg",
+    "name": "Webpack",
+    "link": "https://webpack.js.org/"
+  },
+  {
+    "icon": "src/assets/file-type-jest.svg",
+    "name": "Jest",
+    "link": "https://jestjs.io/"
+  },
+  {
+    "icon": "src/assets/icons8-npm.svg",
+    "name": "npm",
+    "link": "https://www.npmjs.com/"
+  },
+  {
+    "icon": "src/assets/icons8-git.svg",
+    "name": "Git",
+    "link": "https://git-scm.com/"
+  },
+  {
+    "icon": "src/assets/icons8-typescript.svg",
+    "name": "typescript",
+    "link": "https://www.typescriptlang.org/"
+  }
+]
