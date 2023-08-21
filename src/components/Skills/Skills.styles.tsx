@@ -22,14 +22,14 @@ export const SkillsWrapper = styled(Swiper)`
 `;
 
 export const Skill = styled(SwiperSlide)`
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 110px;
   gap: 15px;
-  border: 1px dotted white;
+  border: 1px dashed ${(props) => props.theme.dark.secondaryLight};
   cursor: pointer;
 `;
 

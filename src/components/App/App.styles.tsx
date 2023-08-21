@@ -1,10 +1,9 @@
 import { styled } from 'styled-components';
-import background from '../../assets/hex.jpg';
 
 const StyledApp = styled.div`
   display: flex;
   flex-direction: column;
-  background-image: url(${background});
+  background: ${(props) => `linear-gradient(to bottom right, ${props.theme.dark.primaryDark}, ${props.theme.dark.primaryLight})`};
   background-attachment: fixed;
   background-size: cover;
 `;

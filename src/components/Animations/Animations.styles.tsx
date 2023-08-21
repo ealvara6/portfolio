@@ -23,7 +23,7 @@ const lineOutWidth = keyframes`
 export const Line = styled.div<{ $horizontal?: boolean }>`
   height: ${(props) => (props.$horizontal ? '2px' : '0px')};
   width: ${(props) => (props.$horizontal ? '0px' : '2px')};
-  background-color: white;
+  background-color: ${(props) => props.theme.dark.secondaryLight};
   animation: ${(props) => (props.$horizontal ? lineOutWidth : lineOutHeight)} 1s;
   animation-fill-mode: forwards;
 `;
