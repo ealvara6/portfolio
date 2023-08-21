@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Header, { SubHeader } from '../Headers';
 import {
-  StyledIntro, Wrapper, Line, Gif, LeftSection,
+  StyledIntro, Wrapper, Gif, LeftSection,
 } from './Home.styles';
+import { Line } from '../Animations/Animations.styles';
 import programmingIcon from '../../assets/working.png';
 
 export default function Intro() {

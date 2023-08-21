@@ -3,15 +3,15 @@ import {
 } from 'swiper/modules';
 import { v4 as uuid4 } from 'uuid';
 import data from './skills.json';
+import { Line } from '../Animations/Animations.styles';
 import {
-  SkillsWrapper, Skill, SkillIcon, StyledSkills, Line,
-} from './Home.styles';
+  SkillsWrapper, Skill, SkillIcon, StyledSkills, SkillHeaderWrapper, SkillHeader,
+} from './Skills.styles';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import 'swiper/css/free-mode';
-import Header from '../Headers';
 
 export default function Skills() {
   const skills = data.map((skill) => (
@@ -22,22 +22,24 @@ export default function Skills() {
   ));
   return (
     <StyledSkills>
-      <Header>
-        Skills
-        <Line $horizontal />
-      </Header>
+      <SkillHeaderWrapper>
+        <SkillHeader>Skills</SkillHeader>
+      </SkillHeaderWrapper>
+      <Line $horizontal />
       <SkillsWrapper
         modules={[Navigation, A11y, Autoplay, FreeMode]}
         navigation
         spaceBetween={50}
-        slidesPerView={5}
+        slidesPerView={2}
         loop
         autoplay
         freeMode
         breakpoints={{
-          100: {
-            width: 650,
+          1030: {
             slidesPerView: 5,
+          },
+          700: {
+            slidesPerView: 3,
           },
         }}
       >
