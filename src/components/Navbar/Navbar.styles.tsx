@@ -1,6 +1,9 @@
 import { styled } from 'styled-components';
 
 const StyledNavbar = styled.nav`
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   align-self: center;
   align-items: flex-end;
@@ -10,9 +13,12 @@ const StyledNavbar = styled.nav`
 `;
 
 export const StyledMobileNav = styled.div<{ $expand: boolean }>`
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(4, 28, 50, 0.8);
+  background-color: rgba(68, 119, 206, 0.2);
   min-height: 75px;
   >:first-child {
     :first-child {

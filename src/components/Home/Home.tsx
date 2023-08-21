@@ -1,5 +1,5 @@
 import StyledHome from './Home.styles';
-import Intro from './Intro';
+import Intro from '../Intro/Intro';
 import Skills from '../Skills/Skills';
 
 export default function Home() {
