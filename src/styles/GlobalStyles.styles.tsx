@@ -53,6 +53,8 @@ const GlobalStyles = createGlobalStyle`
   #root, button {
     color: ${(props) => props.theme.dark.color};
     font-family: 'Kanit', sans-serif;
+    min-height: 100vh;
+    height: min-content;
   }
   
   a {

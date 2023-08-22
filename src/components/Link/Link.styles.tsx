@@ -30,6 +30,7 @@ export const NavLink = styled(StyledLink)`
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-bottom: 7px;
 `;
 
 export default StyledLink;

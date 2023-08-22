@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { v4 as uuid4 } from 'uuid';
 import { NavLink } from '../Link/Link.styles';
 import homeIcon from '../../assets/home.png';
@@ -10,25 +11,29 @@ export default function getNavLinks() {
     {
       img: homeIcon,
       text: 'Home',
+      path: '/',
     },
     {
       img: aboutIcon,
       text: 'About',
+      path: 'about',
     },
     {
       img: projectIcon,
       text: 'Projects',
+      path: '/projects',
     },
     {
       img: resumeIcon,
       text: 'Resume',
+      path: 'resume',
     },
   ];
 
   return (
     <>
       {links.map((item) => (
-        <NavLink key={uuid4()}>
+        <NavLink as={Link} key={uuid4()} to={item.path}>
           <img src={item.img} alt={item.text} />
           <div>{item.text}</div>
         </NavLink>

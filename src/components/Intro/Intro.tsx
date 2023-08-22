@@ -1,9 +1,9 @@
-import { StyledIntro, Wrapper } from './Intro.styles';
+import { StyledIntro } from './Intro.styles';
 
 export default function Intro() {
   return (
     <StyledIntro>
-      {/* <Wrapper /> */}
+      this is the home page
     </StyledIntro>
   );
 }
