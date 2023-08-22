@@ -1,15 +1,16 @@
-import { StyledAbout, Avatar, Section } from './About.styles';
+import { useMediaQuery } from 'react-responsive';
+import { StyledAbout } from './About.styles';
+import Avatar from './Avatar';
 import Skills from '../Skills/Skills';
+import Section from './Section';
 
 export default function About() {
-  return (
-    <StyledAbout>
-      <Avatar>This is my avatar</Avatar>
-      <Section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Aliquam vel recusandae error, numquam quae magni.
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
 
-      </Section>
+  return (
+    <StyledAbout $mobile={isMobile}>
+      <Avatar />
+      <Section />
       <Skills />
     </StyledAbout>
   );
