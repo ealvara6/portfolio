@@ -1,52 +1,36 @@
-import { keyframes, styled } from 'styled-components';
+import { styled, keyframes } from 'styled-components';
+import Header from '../Headers';
 
-const openLine = keyframes`
+const slideUp = keyframes`
   0% {
-    width: 20px;
-    height: 20px;
+    height: 0px;
+    opacity: 0%;
   }
-  100% {
-    height: 60vh;
-    width: 75vw;
+  50%, 100% {
+    height: 30px;
+    opacity: 100%;
   }
 `;
 
-// export const Wrapper = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   height: 150px;
-//   width: 100%;
-//   position: relative;
-// `;
-
-export const StyledIntro = styled.div`
+const StyledIntro = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 75vw;
-  height: 100vh;
+  gap: 50px;
 `;
 
-export const LeftSection = styled.div<{ $expand: boolean }>`
-  position: absolute;
-  transition: margin-left 1s linear;
-  margin-left: ${(props) => (props.$expand ? '0%' : '150%')};
+export const IntroSection = styled(Header)`
+  overflow: hidden;
+  animation: ${slideUp} 1.5s forwards;
 `;
 
-export const Gif = styled.img<{ $expand: boolean }>`
-  position: absolute;
-  transition: margin-right 1s linear;
-  margin-right: ${(props) => (props.$expand ? '0%' : '150%')};
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
-export const Wrapper = styled.div`
-  width: 75vw;
-  height: 60vh;
-  /* border: solid white 1px; */
-  background-color: white;
-  /* animation: ${openLine} 1s; */
-  animation-fill-mode: forwards;
-`;
+export default StyledIntro;
