@@ -3,7 +3,7 @@ import {
 } from 'swiper/modules';
 import { v4 as uuid4 } from 'uuid';
 import data from './skills.json';
-import { Line } from '../Animations/Animations.styles';
+import Line from '../Animations/Animations.styles';
 import {
   SkillsWrapper, Skill, SkillIcon, StyledSkills, SkillHeaderWrapper, SkillHeader,
 } from './Skills.styles';

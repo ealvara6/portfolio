@@ -50,11 +50,14 @@ const GlobalStyles = createGlobalStyle`
     border-spacing: 0;
   }
 
+  #root {
+    min-height: 100vh;
+    height: min-content;
+  }
+
   #root, button {
     color: ${(props) => props.theme.dark.color};
     font-family: 'Kanit', sans-serif;
-    min-height: 100vh;
-    height: min-content;
   }
   
   a {

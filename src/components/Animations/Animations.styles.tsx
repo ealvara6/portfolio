@@ -20,7 +20,7 @@ const lineOutWidth = keyframes`
   }
 `;
 
-export const Line = styled.div<{ $horizontal?: boolean }>`
+const Line = styled.div<{ $horizontal?: boolean }>`
   height: ${(props) => (props.$horizontal ? '2px' : '0px')};
   width: ${(props) => (props.$horizontal ? '0px' : '2px')};
   background-color: ${(props) => props.theme.dark.secondaryLight};
@@ -28,4 +28,4 @@ export const Line = styled.div<{ $horizontal?: boolean }>`
   animation-fill-mode: forwards;
 `;
 
-export const SlideUp = styled.div``;
+export default Line;

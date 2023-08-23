@@ -11,4 +11,8 @@ export const SubHeader = styled.h2`
   font-style: italic;
 `;
 
+export const Important = styled.span`
+  color: ${(props) => props.theme.dark.secondaryLight};
+`;
+
 export default Header;

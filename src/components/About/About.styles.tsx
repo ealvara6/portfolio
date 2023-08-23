@@ -3,14 +3,13 @@ import styled from 'styled-components';
 export const StyledAbout = styled.div<{ $mobile: boolean }>`
   display: ${(props) => (props.$mobile ? 'flex' : 'grid')};
   flex-direction: column;
-  gap: ${(props) => (props.$mobile ? '20px' : '0px')};
+  row-gap: ${(props) => (props.$mobile ? '40px' : '0px')};
   text-align: ${(props) => (props.$mobile ? 'center' : 'left')};
   align-self: center;
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 75vw;
+  grid-template-rows: 2fr 1fr;
 
   :last-child {
     grid-column: 1 / -1;
@@ -21,7 +20,8 @@ export const StyledAbout = styled.div<{ $mobile: boolean }>`
 export const StyledSection = styled.div`
   grid-column: 2;
   grid-row: 1;
-  max-width: 300px;
+  max-width: 500px;
+  margin: 0px 20px;
 `;
 
 export const StyledAvatar = styled.div`

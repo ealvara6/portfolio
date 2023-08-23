@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 
 const StyledNavbar = styled.nav`
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
   width: 100%;
   display: flex;
   align-self: center;
@@ -13,8 +13,10 @@ const StyledNavbar = styled.nav`
 `;
 
 export const StyledMobileNav = styled.div<{ $expand: boolean }>`
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
+  /* position: sticky; */
+  z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
