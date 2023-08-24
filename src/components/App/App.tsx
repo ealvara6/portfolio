@@ -1,9 +1,10 @@
-import { Outlet } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../../styles/GlobalStyles.styles';
 import StyledApp from './App.styles';
 import theme from '../../styles/Theme.styles';
 import Navbar from '../Navbar/Navbar';
+import Intro from '../Intro/Intro';
+import About from '../About/About';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <StyledApp>
         <GlobalStyles />
         <Navbar />
-        <Outlet />
+        <Intro />
+        <About />
       </StyledApp>
     </ThemeProvider>
   );

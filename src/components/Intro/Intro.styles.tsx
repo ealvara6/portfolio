@@ -19,6 +19,7 @@ const StyledIntro = styled.div`
   justify-content: center;
   align-items: center;
   width: 75vw;
+  height: 100vh;
   gap: 50px;
 `;
 

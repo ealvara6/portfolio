@@ -24,6 +24,13 @@ export default function Intro() {
     } else setSecondIteration(true);
   };
 
+  const handleClick = () => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <StyledIntro>
       <Content>
@@ -39,7 +46,7 @@ export default function Intro() {
         </Typewriter>
       </Content>
       <Wrapper>
-        <AboutButton>
+        <AboutButton onClick={() => handleClick()}>
           <div>Learn More</div>
           {' '}
           <img src={arrowIcon} alt="" />

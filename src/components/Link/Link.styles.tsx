@@ -26,7 +26,7 @@ const StyledLink = styled.button`
   }
 `;
 
-export const NavLink = styled(StyledLink)`
+export const NavbarLink = styled(StyledLink)`
   display: flex;
   align-items: center;
   gap: 10px;

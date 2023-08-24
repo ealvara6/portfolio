@@ -52,7 +52,6 @@ const GlobalStyles = createGlobalStyle`
 
   #root {
     min-height: 100vh;
-    height: min-content;
   }
 
   #root, button {

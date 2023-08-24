@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { v4 as uuid4 } from 'uuid';
-import { NavLink } from '../Link/Link.styles';
+import { NavbarLink } from '../Link/Link.styles';
 import homeIcon from '../../assets/home.png';
 import aboutIcon from '../../assets/user.png';
 import projectIcon from '../../assets/html.png';
@@ -30,13 +30,20 @@ export default function getNavLinks() {
     },
   ];
 
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       {links.map((item) => (
-        <NavLink as={Link} key={uuid4()} to={item.path}>
+        <NavbarLink key={uuid4()} onClick={() => handleClick(item.path)}>
           <img src={item.img} alt={item.text} />
           <div>{item.text}</div>
-        </NavLink>
+        </NavbarLink>
       ))}
     </>
   );

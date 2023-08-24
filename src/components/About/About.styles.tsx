@@ -10,6 +10,7 @@ export const StyledAbout = styled.div<{ $mobile: boolean }>`
   justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
+  height: 100vh;
 
   :last-child {
     grid-column: 1 / -1;

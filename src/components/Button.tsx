@@ -12,10 +12,8 @@ const slideUp = keyframes`
 `;
 
 const Button = styled.button<{ $animation?: boolean }>`
-  /* background: ${(props) => `linear-gradient(to bottom right, ${props.theme.dark.secondaryDark}, ${props.theme.dark.secondaryLight})`}; */
   background-color: ${(props) => props.theme.dark.secondaryDark};
   border: none;
-  /* min-height: 50px; */
   min-width: 130px;
   border-radius: 10px;
   cursor: pointer;

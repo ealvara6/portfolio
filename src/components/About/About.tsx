@@ -8,7 +8,7 @@ export default function About() {
   const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
 
   return (
-    <StyledAbout $mobile={isMobile}>
+    <StyledAbout $mobile={isMobile} id="about">
       <Avatar />
       <Section />
       <Skills />
