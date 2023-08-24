@@ -1,5 +1,6 @@
 import { styled, keyframes } from 'styled-components';
 import Header from '../Headers';
+import { AnimatedButton } from '../Button';
 
 const slideUp = keyframes`
   0% {
@@ -31,6 +32,13 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+export const AboutButton = styled(AnimatedButton)`
+  display: flex;
+  div {
+    flex-grow: 1;
+  }
 `;
 
 export default StyledIntro;

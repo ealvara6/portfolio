@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Typewriter from '../Typewriter';
-import StyledIntro, { Content, IntroSection } from './Intro.styles';
+import StyledIntro, { Content, IntroSection, AboutButton } from './Intro.styles';
 import Header, { Important } from '../Headers';
-import Button, { AnimatedButton, Wrapper } from '../Button';
+import { Wrapper } from '../Button';
+import arrowIcon from '../../assets/icons8-arrow-down-25.png';
 
 export default function Intro() {
   const title = [
@@ -38,7 +39,11 @@ export default function Intro() {
         </Typewriter>
       </Content>
       <Wrapper>
-        <AnimatedButton>About Me</AnimatedButton>
+        <AboutButton>
+          <div>Learn More</div>
+          {' '}
+          <img src={arrowIcon} alt="" />
+        </AboutButton>
       </Wrapper>
     </StyledIntro>
   );
