@@ -11,7 +11,7 @@ export default function getNavLinks() {
     {
       img: homeIcon,
       text: 'Home',
-      path: '/',
+      path: 'home',
     },
     {
       img: aboutIcon,

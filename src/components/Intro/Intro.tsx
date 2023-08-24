@@ -32,7 +32,7 @@ export default function Intro() {
   };
 
   return (
-    <StyledIntro>
+    <StyledIntro id="home">
       <Content>
         <IntroSection onAnimationEnd={() => setSecondAnimation(true)}>Hey There!</IntroSection>
         {secondAnimation && (
