@@ -6,6 +6,7 @@ import Navbar from '../Navbar/Navbar';
 import Intro from '../Intro/Intro';
 import About from '../About/About';
 import Footer from '../Footer/Footer';
+import Projects from '../Projects/Projects';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Intro />
         <About />
+        <Projects />
         <Footer />
       </StyledApp>
     </ThemeProvider>
