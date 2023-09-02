@@ -1,6 +1,7 @@
-import StyledFooter, { Icon, InfoSection, Line, Link } from './Footer.styles';
+import StyledFooter, {
+  Icon, InfoSection, Line, Link,
+} from './Footer.styles';
 import githubLogo from '../../assets/github-mark-white.svg';
-import StyledLink from '../Link/Link.styles';
 
 export default function Footer() {
   return (

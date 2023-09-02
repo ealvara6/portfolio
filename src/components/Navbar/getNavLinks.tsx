@@ -21,7 +21,7 @@ export default function getNavLinks() {
     {
       img: projectIcon,
       text: 'Projects',
-      path: '/projects',
+      path: 'projects',
     },
     {
       img: resumeIcon,

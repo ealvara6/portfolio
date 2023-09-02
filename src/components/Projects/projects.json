@@ -1,0 +1,16 @@
+[
+  {
+    "image": "src/assets/portfolio.png",
+    "title": "Project Portfolio",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium repellendus facilis ducimus omnis unde distinctio fuga necessitatibus alias fugiat.",
+    "tech": ["React", "Styled Components", "Vite", "Typescript"]
+  },
+  {
+    "image": "src/assets/poke-mem.png",
+    "title": "Poke-Mem",
+    "desc": "This project is part of the Odin Project full stack web development course. I utilized the PokeAPI to fetch pokemon data inside of the useEffect hook. Poke-Mem is a memory card game that lets you choose between pokemon generations 1-5. a set of pokemon are displayed and you must click on each pokemon once to advance to the next level.",
+    "tech": ["react", "Vite", "SASS", "pokeapi"],
+    "website": "https://poke-mem-xi.vercel.app/",
+    "code": "https://github.com/ealvara6/Poke-Mem"
+  }
+]

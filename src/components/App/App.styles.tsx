@@ -9,6 +9,7 @@ const StyledApp = styled.div`
   background: ${(props) => `linear-gradient(to bottom right, ${props.theme.dark.primaryDark}, ${props.theme.dark.primaryLight})`};
   background-attachment: fixed;
   background-size: cover;
+  gap: 50px;
 `;
 
 export default StyledApp;

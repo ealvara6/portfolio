@@ -1,47 +1,47 @@
+import { v4 as uuid4 } from 'uuid';
 import StyledProjects, {
-  Buttons, Content, Description, Image, Project, TechTitle,
+  Buttons, Content, Image, Project, TechTitle,
   Technologies, Technology, TechnologySection, Title,
 } from './Projects.styles';
-import portfolioImage from '../../assets/portfolio.png';
 import Button from '../Button';
 import Line from '../Animations/Animations.styles';
 import Text from '../Text';
+import projects from './projects.json';
 
 export default function Projects() {
-  return (
-    <StyledProjects>
-      <Project>
-        <Image $image={portfolioImage} />
-        <Content>
+  let count = -1;
+  const projectComponents = projects.map((project) => {
+    count += 1;
+    return (
+      <Project key={uuid4()}>
+        <Image $image={project.image} $count={count} />
+        <Content $count={count}>
           <Title>
-            <div>
-              <span>01.</span>
-              {' '}
-              Portfolio Project
-            </div>
+            <span>{`0${count + 1}.`}</span>
+            <div>{project.title}</div>
             <Line $horizontal />
           </Title>
-          <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ad accusantium repellendus facilis ducimus omnis unde distinctio
-            fuga necessitatibus alias fugiat.
-
-          </Text>
+          <Text>{project.desc}</Text>
           <TechnologySection>
             <TechTitle>TECHNOLOGIES</TechTitle>
             <Technologies>
-              <Technology>React</Technology>
-              <Technology>React</Technology>
-              <Technology>React</Technology>
-              <Technology>React</Technology>
+              {project.tech.map((tech) => (
+                <Technology key={uuid4()}>{tech}</Technology>
+              ))}
             </Technologies>
           </TechnologySection>
           <Buttons>
-            <Button>Live Preview</Button>
-            <Button>Code</Button>
+            <Button as="a" href={project.website} target="_blank">Live Preview</Button>
+            <Button as="a" href={project.code} target="_blank">Code</Button>
           </Buttons>
         </Content>
       </Project>
+    );
+  });
+
+  return (
+    <StyledProjects id="projects">
+      {projectComponents}
     </StyledProjects>
   );
 }

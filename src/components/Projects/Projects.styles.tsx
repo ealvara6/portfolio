@@ -10,6 +10,7 @@ const StyledProjects = styled.div`
   max-width: 1250px;
   min-height: 100vh;
   padding: 0px 20px;
+  gap: 60px;
 `;
 
 export const Project = styled.div`
@@ -26,7 +27,7 @@ export const Project = styled.div`
   }
 `;
 
-export const Image = styled.div<{ $image: string }>`
+export const Image = styled.div<{ $image: string, $count: number }>`
   background-image: ${(props) => `url(${props.$image})`};
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,17 +35,17 @@ export const Image = styled.div<{ $image: string }>`
   width: 100%;
   align-self: center;
   min-height: 500px;
-  grid-column: 1;
+  grid-column: ${(props) => (props.$count % 2 === 0 ? '1' : '2')};
   grid-row: 1 / -1;
 `;
 
-export const Content = styled.div`
+export const Content = styled.div<{ $count: number }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  grid-column: 2;
+  grid-column: ${(props) => (props.$count % 2 === 0 ? '2' : '1')};
   grid-row: 1;
   `;
 
@@ -67,11 +68,6 @@ export const TechTitle = styled(Title)`
   font-weight: 300;
   font-size: 26px;
   width: min-content;
-`;
-
-export const Description = styled.div`
-  align-self: flex-start;
-  line-height: 1.2;
 `;
 
 export const TechnologySection = styled.div`

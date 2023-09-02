@@ -12,13 +12,16 @@ const slideUp = keyframes`
 `;
 
 const Button = styled.button<{ $animation?: boolean }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: ${(props) => props.theme.dark.secondaryDark};
   border: none;
   min-width: 130px;
+  min-height: 50px;
   border-radius: 10px;
   cursor: pointer;
   font-size: 18px;
-  padding: 10px;
 `;
 
 export const Wrapper = styled.div`
