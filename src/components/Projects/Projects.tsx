@@ -7,6 +7,7 @@ import Button from '../Button';
 import Line from '../Animations/Animations.styles';
 import Text from '../Text';
 import projects from './projects.json';
+import { SectionHeader } from '../Headers';
 
 export default function Projects() {
   let count = -1;
@@ -41,6 +42,7 @@ export default function Projects() {
 
   return (
     <StyledProjects id="projects">
+      <SectionHeader>Projects</SectionHeader>
       {projectComponents}
     </StyledProjects>
   );

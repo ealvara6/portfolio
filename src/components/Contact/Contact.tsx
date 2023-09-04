@@ -1,9 +1,9 @@
 import * as EmailValidator from 'email-validator';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Header from '../Headers';
+import Header, { SectionHeader } from '../Headers';
 import StyledContacts, {
-  Form, FormButton, Input, Label, TextArea,
+  Form, FormButton, Input, InputSection, Label, TextArea,
 } from './Contact.styles';
 import Error from '../../styles/Error.styles';
 import Success from '../../styles/Success.styles';
@@ -42,21 +42,21 @@ export default function Contact() {
       {emailSent ? <Success>Email Sent!</Success>
         : (
           <>
-            <Header>CONTACT</Header>
+            <SectionHeader>Contact  </SectionHeader>
             <Form onSubmit={sendEmail} ref={form}>
-              <div>
+              <InputSection>
                 <Label htmlFor="from_email">Email: </Label>
                 {contactError && <Error>Please enter a valid email address</Error>}
                 <Input onChange={(e) => changeEmail(e)} value={email} type="email" name="from_email" id="from_email" />
-              </div>
-              <div>
+              </InputSection>
+              <InputSection>
                 <Label htmlFor="subject">Subject: </Label>
                 <Input type="text" name="subject" id="subject" />
-              </div>
-              <div>
+              </InputSection>
+              <InputSection>
                 <Label htmlFor="message">Message: </Label>
                 <TextArea name="message" id="message" />
-              </div>
+              </InputSection>
               <FormButton>Submit</FormButton>
             </Form>
           </>

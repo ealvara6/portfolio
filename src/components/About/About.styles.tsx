@@ -9,18 +9,24 @@ export const StyledAbout = styled.div<{ $mobile: boolean }>`
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: min-content 2fr 1fr;
   height: 100vh;
 
+  
   :last-child {
     grid-column: 1 / -1;
-    grid-row: 2;
+    grid-row: 3;
   }
+  `;
+
+export const Header = styled.div`
+  grid-column: 1 / -1;
+  grid-row: 1;
 `;
 
 export const StyledSection = styled.div`
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
   max-width: 500px;
   margin: 0px 20px;
 `;
@@ -30,5 +36,5 @@ export const StyledAvatar = styled.div`
   flex-direction: column;
   gap: 20px;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
 `;

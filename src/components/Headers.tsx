@@ -15,4 +15,9 @@ export const Important = styled.span`
   color: ${(props) => props.theme.dark.secondaryLight};
 `;
 
+export const SectionHeader = styled.h1`
+  font-size: 32px;
+  font-weight: 300;
+`;
+
 export default Header;
