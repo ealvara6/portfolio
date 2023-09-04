@@ -51,6 +51,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   #root {
+    position: relative;
     min-height: 100vh;
   }
 

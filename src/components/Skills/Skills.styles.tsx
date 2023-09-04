@@ -14,6 +14,7 @@ export const StyledSkills = styled.div`
   gap: 15px;
   width: 90%;
   max-width: 75vw;
+  z-index: 0;
 `;
 
 export const SkillsWrapper = styled(Swiper)`

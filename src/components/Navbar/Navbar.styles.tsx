@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 
 const StyledNavbar = styled.nav`
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 0px;
   width: 100%;
   display: flex;
   align-self: center;
@@ -10,17 +10,20 @@ const StyledNavbar = styled.nav`
   justify-content: flex-end;
   width: 100%;
   max-width: 1300px;
+  backdrop-filter: blur(20px);
+  z-index: 1;
 `;
 
 export const StyledMobileNav = styled.div<{ $expand: boolean }>`
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 0px;
   z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgba(68, 119, 206, 0.2);
   min-height: 75px;
+  backdrop-filter: blur(6px);
   >:first-child {
     :first-child {
       transform: ${(props) => (props.$expand ? 'rotateZ(45deg)' : 'none')};
