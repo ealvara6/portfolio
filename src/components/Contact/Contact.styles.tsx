@@ -14,6 +14,28 @@ const StyledContacts = styled.div`
   gap: 50px;
   `;
 
+export const ContactInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+export const Info = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+`;
+
+export const Icon = styled.div<{ $icon: string }>`
+  background-image: ${(props) => `url(${props.$icon})`};
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+`;
+
+export const ContactText = styled.div``;
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;

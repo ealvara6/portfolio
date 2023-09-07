@@ -10,7 +10,6 @@ const StyledProjects = styled.div`
   max-width: 1250px;
   min-height: 100vh;
   padding: 0px 20px;
-  gap: 60px;
 `;
 
 export const Project = styled.div`
