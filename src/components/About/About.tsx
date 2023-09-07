@@ -6,7 +6,7 @@ import Section from './Section';
 import { SectionHeader } from '../Headers';
 
 export default function About() {
-  const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 720px)' });
 
   return (
     <StyledAbout $mobile={isMobile} id="about">

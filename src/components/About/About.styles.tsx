@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledAbout = styled.div<{ $mobile: boolean }>`
   display: ${(props) => (props.$mobile ? 'flex' : 'grid')};
   flex-direction: column;
-  row-gap: ${(props) => (props.$mobile ? '40px' : '0px')};
+  row-gap: ${(props) => (props.$mobile ? '40px' : '15px')};
   text-align: ${(props) => (props.$mobile ? 'center' : 'left')};
   align-self: center;
   align-items: center;
@@ -34,7 +34,19 @@ export const StyledSection = styled.div`
 export const StyledAvatar = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   grid-column: 1;
   grid-row: 2;
+  width: 100%;
+  max-width: 400px;
+`;
+
+export const HeadShot = styled.div<{ $image: string }>`
+  background-image: ${(props) => `url(${props.$image})`};
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
 `;
