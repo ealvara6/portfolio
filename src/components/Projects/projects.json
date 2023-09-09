@@ -1,6 +1,7 @@
 [
   {
     "image": "src/assets/portfolio.png",
+    "imageMobile": "src/assets/project-portfolio-mobile.png",
     "title": "Project Portfolio",
     "desc": "As part of the Odin Project course, I created a portfolio website to display the work that I've done through my journey in becoming a web developer. I utilize modern technologies such as Styled Components and Typescript to create my website and I will continue updating my portfolio as I create many more projects to sharpen my skills.",
     "tech": ["React", "Styled Components", "Vite", "Typescript"],
@@ -8,6 +9,7 @@
   },
   {
     "image": "src/assets/poke-mem.png",
+    "imageMobile": "src/assets/poke-mem-mobile.png",
     "title": "Poke-Mem",
     "desc": "This project is part of the Odin Project full stack web development course. I utilized the PokeAPI to fetch pokemon data inside of the useEffect hook. Poke-Mem is a memory card game that lets you choose between pokemon generations 1-5. a set of pokemon are displayed and you must click on each pokemon once to advance to the next level.",
     "tech": ["react", "Vite", "SASS", "pokeapi"],
@@ -16,6 +18,7 @@
   },
   {
     "image": "src/assets/cv-project.png",
+    "imageMobile": "src/assets/cv-mobile.png",
     "title": "CV Project",
     "desc": "This project is part of the Odin Project full stack web development course. I coded this project with the main purpose of solidifying my knowledge in using usestate to update affected components. It is a simple CV template that allows users to input their information onto a template.",
     "tech": ["react", "SASS", "Jest"],
@@ -24,6 +27,7 @@
   },
   {
     "image": "src/assets/battleship.png",
+    "imageMobile": "src/assets/battleship.png",
     "title": "Battleship",
     "desc": "This project is based off of the popular boardgame Battleship. The user places their ships onto their game board before the game starts and faces off against an AI that randomly targets the players board after each turn. The main purpose of this project was to practice using the Jest testing framework to minimize the amount of bugs in my application.",
     "tech": ["javascript", "Jest", "SASS", "Object Oriented Classes"],

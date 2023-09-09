@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive';
 import { v4 as uuid4 } from 'uuid';
 import StyledProjects, {
   Buttons, Content, Image, Project, TechTitle,
@@ -10,12 +11,13 @@ import projects from './projects.json';
 import { SectionHeader } from '../Headers';
 
 export default function Projects() {
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
   let count = -1;
   const projectComponents = projects.map((project) => {
     count += 1;
     return (
       <Project key={uuid4()}>
-        <Image $image={project.image} $count={count} />
+        <Image $image={isMobile ? project.imageMobile : project.image} $count={count} />
         <Content $count={count}>
           <Title>
             <span>{`0${count + 1}.`}</span>
