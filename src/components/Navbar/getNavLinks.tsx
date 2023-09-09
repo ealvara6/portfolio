@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { v4 as uuid4 } from 'uuid';
 import { NavbarLink } from '../Link/Link.styles';
 import homeIcon from '../../assets/home.png';

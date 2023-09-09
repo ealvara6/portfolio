@@ -1,5 +1,7 @@
 import * as EmailValidator from 'email-validator';
-import { useRef, useState } from 'react';
+import {
+  ChangeEvent, FormEvent, useRef, useState,
+} from 'react';
 import emailjs from '@emailjs/browser';
 import { SectionHeader } from '../Headers';
 import StyledContacts, {
@@ -18,10 +20,11 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [contactError, setContactError] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     setContactError(false);
+    const message = (form.current ? form.current : '');
     e.preventDefault();
     if (!EmailValidator.validate(email)) {
       setContactError(true);
@@ -29,9 +32,9 @@ export default function Contact() {
       return;
     }
     setEmailSent(true);
-    return;
+    // return;
 
-    emailjs.sendForm('service_fyms3aj', 'contact_form', form.current, '1dweh8rQNy46tw-cp')
+    emailjs.sendForm('service_fyms3aj', 'contact_form', message, '1dweh8rQNy46tw-cp')
       .then((res) => {
         console.log(res);
       }, (err) => {
@@ -39,7 +42,7 @@ export default function Contact() {
       });
   };
 
-  const changeEmail = (e) => {
+  const changeEmail = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
 
@@ -48,7 +51,7 @@ export default function Contact() {
       <SectionHeader>Contact</SectionHeader>
       {emailSent ? <Success>Email Sent!</Success>
         : (
-          <Form onSubmit={sendEmail} ref={form}>
+          <Form onSubmit={(e) => sendEmail(e)} ref={form}>
             <InputSection>
               <Label htmlFor="from_email">Email: </Label>
               {contactError && <Error>Please enter a valid email address</Error>}

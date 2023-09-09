@@ -1,4 +1,3 @@
-import StyledLink, { NavLink } from './Link.styles';
+import StyledLink from './Link.styles';
 
 export default StyledLink;
-export { NavLink };
