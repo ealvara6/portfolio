@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <StyledContacts>
+    <StyledContacts id="contact">
       <SectionHeader>Contact</SectionHeader>
       {emailSent ? <Success>Email Sent!</Success>
         : (

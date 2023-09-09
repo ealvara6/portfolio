@@ -25,8 +25,8 @@ export default function getNavLinks() {
     },
     {
       img: resumeIcon,
-      text: 'Resume',
-      path: 'resume',
+      text: 'Contact',
+      path: 'contact',
     },
   ];
 
