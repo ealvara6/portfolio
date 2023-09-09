@@ -7,6 +7,7 @@ const StyledProjects = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 50px;
   max-width: 1250px;
   min-height: 100vh;
   padding: 0px 20px;
