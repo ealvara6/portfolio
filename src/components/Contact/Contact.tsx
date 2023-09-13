@@ -32,7 +32,6 @@ export default function Contact() {
       return;
     }
     setEmailSent(true);
-    // return;
 
     emailjs.sendForm('service_fyms3aj', 'contact_form', message, '1dweh8rQNy46tw-cp')
       .then((res) => {
