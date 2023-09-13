@@ -1,5 +1,4 @@
 import { keyframes, styled } from 'styled-components';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Header from '../Headers';
 
 const slideUp = keyframes`
@@ -15,23 +14,23 @@ export const StyledSkills = styled.div`
   width: 90%;
   max-width: 75vw;
   z-index: 0;
-`;
 
-export const SkillsWrapper = styled(Swiper)`
-  align-self: center;
-  width: 100%;
-`;
+  >:last-child {
+    align-self: center;
+    width: 100%;
+  }
 
-export const Skill = styled(SwiperSlide)`
-  background-color: rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 110px;
-  gap: 15px;
-  border: 1px dashed ${(props) => props.theme.dark.secondaryLight};
-  cursor: pointer;
+  .swiper-slide {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 110px;
+    gap: 15px;
+    border: 1px dashed ${(props) => props.theme.dark.secondaryLight};
+    cursor: pointer;
+  }
 `;
 
 export const SkillIcon = styled.div<{ $icon: string }>`

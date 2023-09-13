@@ -7,10 +7,11 @@ import StyledProjects, {
 import Button from '../Button';
 import Line from '../Animations/Animations.styles';
 import Text from '../Text';
-import projects from './projects.json';
 import { SectionHeader } from '../Headers';
+import GetProjects from './GetProjects';
 
 export default function Projects() {
+  const projects = GetProjects();
   const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
   let count = -1;
   const projectComponents = projects.map((project) => {
