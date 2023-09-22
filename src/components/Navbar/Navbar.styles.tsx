@@ -10,12 +10,13 @@ const StyledNavbar = styled.nav`
   justify-content: flex-end;
   width: 100%;
   max-width: 1300px;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   z-index: 1;
 `;
 
 export const StyledMobileNav = styled.div<{ $expand: boolean }>`
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 1;
   width: 100%;
@@ -23,6 +24,7 @@ export const StyledMobileNav = styled.div<{ $expand: boolean }>`
   flex-direction: column;
   background-color: rgba(68, 119, 206, 0.2);
   min-height: 75px;
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   >:first-child {
     :first-child {
