@@ -14,6 +14,7 @@ export default function GetProjects() {
       title: 'Project Portfolio',
       desc: "As part of the Odin Project course, I created a portfolio website to display the work that I've done through my journey in becoming a web developer. I utilize modern technologies such as Styled Components and Typescript to create my website and I will continue updating my portfolio as I create many more projects to sharpen my skills.",
       tech: ['React', 'Styled Components', 'Vite', 'Typescript'],
+      website: 'https://portfolio-sepia-tau-77.vercel.app/',
       code: 'https://github.com/ealvara6/portfolio',
     },
     {
@@ -31,7 +32,7 @@ export default function GetProjects() {
       title: 'CV Project',
       desc: 'This project is part of the Odin Project full stack web development course. I coded this project with the main purpose of solidifying my knowledge in using usestate to update affected components. It is a simple CV template that allows users to input their information onto a template.',
       tech: ['react', 'SASS', 'Jest'],
-      website: 'https://cv-project-gbnhh68zc-ealvara6.vercel.app/',
+      website: 'https://cv-project-alpha.vercel.app/',
       code: 'https://github.com/ealvara6/cv-project',
     },
     {
@@ -40,7 +41,7 @@ export default function GetProjects() {
       title: 'Battleship',
       desc: 'This project is based off of the popular boardgame Battleship. The user places their ships onto their game board before the game starts and faces off against an AI that randomly targets the players board after each turn. The main purpose of this project was to practice using the Jest testing framework to minimize the amount of bugs in my application.',
       tech: ['javascript', 'Jest', 'SASS', 'Object Oriented Classes'],
-      website: 'https://battleship-hcq6yae9j-ealvara6.vercel.app/',
+      website: 'https://battleship-eight.vercel.app/',
       code: 'https://github.com/ealvara6/battleship',
     },
   ];
