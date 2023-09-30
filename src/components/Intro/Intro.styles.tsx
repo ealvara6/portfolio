@@ -38,6 +38,7 @@ export const Content = styled.div`
 export const AboutButton = styled(AnimatedButton)`
   display: flex;
   width: 150px;
+  padding: 10px;
   div {
     flex-grow: 1;
   }
