@@ -5,9 +5,20 @@ import pokememImageMobile from '../../assets/poke-mem-mobile.png';
 import cvProjectImage from '../../assets/cv-project.png';
 import cvProjectImageMobile from '../../assets/cv-mobile.png';
 import battleshipImage from '../../assets/battleship.png';
+import miniMessageBoardImage from '../../assets/mini-message-board.png';
+import miniMessageBoardImageMobile from '../../assets/mini-message-board-mobile.png';
 
 export default function GetProjects() {
   const data = [
+    {
+      image: miniMessageBoardImage,
+      imageMobile: miniMessageBoardImageMobile,
+      title: 'Mini Message Board',
+      desc: 'This website is a project within the Odin Project. This website allowed me to strengthen my concepts of express and routing. This website takes in user input within the forms page and once submitted, adds the new form information into the posts collection which is displayed on the home page.',
+      tech: ['Express', 'Tailwindcss', 'EJS'],
+      website: 'https://mini-message-board-production-b121.up.railway.app/',
+      code: 'https://github.com/ealvara6/mini-message-board',
+    },
     {
       image: portfolioImage,
       imageMobile: portfolioImageMobile,
