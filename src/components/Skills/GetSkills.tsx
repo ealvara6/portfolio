@@ -9,6 +9,7 @@ import jestIcon from '../../assets/file-type-jest.svg';
 import npmIcon from '../../assets/icons8-npm.svg';
 import gitIcon from '../../assets/icons8-git.svg';
 import typescriptIcon from '../../assets/icons8-typescript.svg';
+import postgreSQLIcon from '../../assets/postgresql.jpeg';
 
 export default function GetSKills() {
   const data = [
@@ -66,6 +67,11 @@ export default function GetSKills() {
       icon: typescriptIcon,
       name: 'typescript',
       link: 'https://www.typescriptlang.org/',
+    },
+    {
+      icon: postgreSQLIcon,
+      name: 'PostgreSQL',
+      link: 'https://www.postgresql.org/',
     },
   ];
 
